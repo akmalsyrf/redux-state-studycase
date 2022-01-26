@@ -13,14 +13,12 @@ export default function AddKontak() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("1. Masuk handle submit");
 
     dispatch(addKontak({ nama: nama, noHp: noHp }));
   };
 
   useEffect(() => {
     if (addKontakResult) {
-      console.log("5. Masuk component did update");
       dispatch(getListKontak());
       setNama("");
       setNoHp("");

@@ -1,34 +1,19 @@
 {
   "contacts": [
     {
-      "id": 1,
-      "nama": "Meliodas",
-      "noHp": "08123456789"
-    },
-    {
-      "id": 2,
-      "nama": "Bang",
-      "noHp": "08123456789"
-    },
-    {
-      "id": 3,
-      "nama": "Diane",
-      "noHp": "08123456789"
-    },
-    {
-      "nama": "King",
-      "noHp": "0987654",
-      "id": 4
-    },
-    {
-      "nama": "Eleanor",
-      "noHp": "0678687586",
-      "id": 5
+      "nama": "meliodas",
+      "noHp": "08179187676",
+      "id": 1
     },
     {
       "nama": "Gowther",
-      "noHp": "0987655",
-      "id": 6
+      "noHp": "6070708988",
+      "id": 2
+    },
+    {
+      "nama": "King",
+      "noHp": "68568587697970809",
+      "id": 3
     }
   ]
 }
