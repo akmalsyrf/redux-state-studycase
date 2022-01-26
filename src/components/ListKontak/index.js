@@ -9,7 +9,6 @@ export default function ListKontak() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    console.log("1. useEffect component did mount");
     //get list contacts
     dispatch(getListKontak());
   }, [dispatch]);
