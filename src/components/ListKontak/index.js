@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
-import { getListKontak, deleteKontak } from "../../actions/KontakAction";
+import { getListKontak, deleteKontak, detailKontak } from "../../actions/KontakAction";
 
 export default function ListKontak() {
   const { getListKontakResult, getListKontakLoading, getListKontakError, deleteKontakResult } = useSelector((state) => state.KontakReducer);
@@ -15,7 +15,6 @@ export default function ListKontak() {
 
   useEffect(() => {
     if (deleteKontakResult) {
-      console.log("4. Masuk component did update");
       dispatch(getListKontak());
     }
   }, [deleteKontakResult, dispatch]);
@@ -27,7 +26,7 @@ export default function ListKontak() {
         getListKontakResult.map((kontak, i) => {
           return (
             <p key={i}>
-              {kontak.nama} - {kontak.noHp} - <button onClick={() => dispatch(deleteKontak(kontak.id))}>Hapus</button>
+              {kontak.nama} - {kontak.noHp} - <button onClick={() => dispatch(deleteKontak(kontak.id))}>Hapus</button> - <button onClick={() => dispatch(detailKontak(kontak))}>Edit</button>
             </p>
           );
         })

@@ -1,9 +1,9 @@
 {
   "contacts": [
     {
+      "id": 1,
       "nama": "meliodas",
-      "noHp": "08179187676",
-      "id": 1
+      "noHp": "08179187676"
     },
     {
       "nama": "Gowther",
